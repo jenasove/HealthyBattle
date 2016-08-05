@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: 9378d60fd9b2d7c479819b4cbceb6a9a
+timeCreated: 1469159594
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: HD_Body
+    100002: HD_Bread
+    100004: HD_Feet
+    100006: HD_FootLeft
+    100008: HD_FootRight
+    100010: HD_HandLeft
+    100012: HD_HandRight
+    100014: HD_Hands
+    100016: //RootNode
+    400000: HD_Body
+    400002: HD_Bread
+    400004: HD_Feet
+    400006: HD_FootLeft
+    400008: HD_FootRight
+    400010: HD_HandLeft
+    400012: HD_HandRight
+    400014: HD_Hands
+    400016: //RootNode
+    2300000: HD_Body
+    2300002: HD_Bread
+    2300004: HD_FootLeft
+    2300006: HD_FootRight
+    2300008: HD_HandLeft
+    2300010: HD_HandRight
+    3300000: HD_Body
+    3300002: HD_Bread
+    3300004: HD_FootLeft
+    3300006: HD_FootRight
+    3300008: HD_HandLeft
+    3300010: HD_HandRight
+    4300000: HD_Body
+    4300002: HD_Bread
+    4300004: HD_HandRight
+    4300006: HD_HandLeft
+    4300008: HD_FootRight
+    4300010: HD_FootLeft
+    7400000: H_Idle
+    7400002: H_Walk
+    7400004: H_Shoot
+    7400006: H_Die
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: H_Idle
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: HD_Body
+        weight: 1
+      - path: HD_Body/HD_Bread
+        weight: 1
+      - path: HD_Body/HD_Feet
+        weight: 1
+      - path: HD_Body/HD_Feet/HD_FootLeft
+        weight: 1
+      - path: HD_Body/HD_Feet/HD_FootRight
+        weight: 1
+      - path: HD_Body/HD_Hands
+        weight: 1
+      - path: HD_Body/HD_Hands/HD_HandLeft
+        weight: 1
+      - path: HD_Body/HD_Hands/HD_HandRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: H_Walk
+      takeName: Take 001
+      firstFrame: 24
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: HD_Body
+        weight: 1
+      - path: HD_Body/HD_Bread
+        weight: 1
+      - path: HD_Body/HD_Feet
+        weight: 1
+      - path: HD_Body/HD_Feet/HD_FootLeft
+        weight: 1
+      - path: HD_Body/HD_Feet/HD_FootRight
+        weight: 1
+      - path: HD_Body/HD_Hands
+        weight: 1
+      - path: HD_Body/HD_Hands/HD_HandLeft
+        weight: 1
+      - path: HD_Body/HD_Hands/HD_HandRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: H_Shoot
+      takeName: Take 001
+      firstFrame: 49
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: HD_Body
+        weight: 1
+      - path: HD_Body/HD_Bread
+        weight: 1
+      - path: HD_Body/HD_Feet
+        weight: 1
+      - path: HD_Body/HD_Feet/HD_FootLeft
+        weight: 1
+      - path: HD_Body/HD_Feet/HD_FootRight
+        weight: 1
+      - path: HD_Body/HD_Hands
+        weight: 1
+      - path: HD_Body/HD_Hands/HD_HandLeft
+        weight: 1
+      - path: HD_Body/HD_Hands/HD_HandRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: H_Die
+      takeName: Take 001
+      firstFrame: 58
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: HD_Body
+        weight: 1
+      - path: HD_Body/HD_Bread
+        weight: 1
+      - path: HD_Body/HD_Feet
+        weight: 1
+      - path: HD_Body/HD_Feet/HD_FootLeft
+        weight: 1
+      - path: HD_Body/HD_Feet/HD_FootRight
+        weight: 1
+      - path: HD_Body/HD_Hands
+        weight: 1
+      - path: HD_Body/HD_Hands/HD_HandLeft
+        weight: 1
+      - path: HD_Body/HD_Hands/HD_HandRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 6
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

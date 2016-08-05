@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BroccoliMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Br_Body
+    m_Weight: 1
+  - m_Path: Br_Body/Br_Feet
+    m_Weight: 1
+  - m_Path: Br_Body/Br_Feet/Br_FootLeft
+    m_Weight: 1
+  - m_Path: Br_Body/Br_Feet/Br_FootRight
+    m_Weight: 1
+  - m_Path: Br_Body/Br_Foliage
+    m_Weight: 1
+  - m_Path: Br_Body/Br_Hands
+    m_Weight: 1
+  - m_Path: Br_Body/Br_Hands/Br_HandLeft
+    m_Weight: 1
+  - m_Path: Br_Body/Br_Hands/Br_HandRight
+    m_Weight: 1
