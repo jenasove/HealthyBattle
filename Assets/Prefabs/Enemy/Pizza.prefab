@@ -713,9 +713,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaPatrol: {x: 3.5, y: 3.5}
   patrolUpdate: 2
-  damageEnemy: 2
+  damageEnemy: 4
   lifeBar: {fileID: 224000011972772618}
   lifePoints: 33
+  lifeIncrease: 20
 --- !u!114 &114000012553790680
 MonoBehaviour:
   m_ObjectHideFlags: 1

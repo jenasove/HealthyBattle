@@ -5,6 +5,8 @@ public class EnemyGenerator : MonoBehaviour
 {
 	public GameObject enemyPrefab;
 	public float waitTime = 5;
+	public int enemies = 5;
+	private int auxEnemies = 0;
 
 	public RectTransform lifeBarSpawnPoint;
 	public float lifePointsSP = 50f;
@@ -18,17 +20,21 @@ public class EnemyGenerator : MonoBehaviour
 
 	void CreateEnemy () 
 	{
-		Instantiate (enemyPrefab, transform.position, Quaternion.identity);
+		if (auxEnemies <= enemies) 
+		{
+			Instantiate (enemyPrefab, transform.position, Quaternion.identity);
+			auxEnemies++;
+		}
 	}
 
-	public void Shooting (float damageSP)
+	public void ShootingCharacter (float damageSP)
 	{
 		lifePointsSP -= damageSP;
 		lifeBarSpawnPoint.localScale = new Vector3 (lifePointsSP / maxLifePointsSP, 1.0f, 1.0f);
 		if (lifePointsSP <= 0f) 
 		{
 			lifeBarSpawnPoint.localScale = new Vector3 (0.0f, 1.0f, 1.0f);
-			Destroy (this.gameObject, 0);
+			Destroy (this.gameObject, 0f);
 		}
 	}
 }

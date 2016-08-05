@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour
 	public RectTransform lifeBar;
 	public float lifePoints = 10f;
 	private float maxLifePoints;
-	private float lifeIncrease = 10;
+	public float lifeIncrease = 10;
 
 	private Vector3 randomDestination;
 	private Vector3 startPosition;
@@ -67,7 +67,7 @@ public class EnemyController : MonoBehaviour
 		yield return new WaitForSeconds (0);
 	}
 
-	public void Shoot(float damageCharacter)
+	public void ShootCharacter(float damageCharacter)
 	{
 		lifePoints -= damageCharacter;
 		lifeBar.localScale = new Vector3 (lifePoints / maxLifePoints, 1.0f, 1.0f);
@@ -83,7 +83,7 @@ public class EnemyController : MonoBehaviour
 		enemyAnimator.SetTrigger ("death");
 		enemyAnimator.gameObject.GetComponent<Animator> ().enabled = false;
 		agent.Stop ();
-		Destroy (this.gameObject, 0);
+		Destroy (this.gameObject, 0f);
 		player.SendMessage ("LifeIncrease", lifeIncrease);
 	}
 }

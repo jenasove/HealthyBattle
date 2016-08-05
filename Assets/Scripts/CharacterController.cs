@@ -56,8 +56,8 @@ public class CharacterController : MonoBehaviour
 			characterAnimator.SetTrigger ("shoot");
 			if (Physics.Raycast (this.transform.position + this.transform.up * this.transform.localScale.y, this.transform.forward, out hit)) 
 			{
-				hit.transform.SendMessage ("Shoot", damage);
-				hit.transform.SendMessage ("Shooting", damage);
+				hit.transform.SendMessage ("ShootCharacter", damage);
+				hit.transform.SendMessage ("ShootingCharacter", damage);
 				audioSource.PlayOneShot (soundFX [1]);
 			}
 		}
@@ -81,11 +81,6 @@ public class CharacterController : MonoBehaviour
 		if (collisionObject.transform.tag == "Floor") 
 		{
 			DieCharacter ();
-		}
-
-		if (collisionObject.transform.tag == "Obstacle") 
-		{
-			lifePointsCharacter -= 2f;
 		}
 	}
 
@@ -121,12 +116,14 @@ public class CharacterController : MonoBehaviour
 
 	public void LifeIncrease (float lifeIncrease)
 	{
+		print ("IncrementoVida: "+lifeIncrease);
 		lifePointsCharacter += lifeIncrease;
 	}
 
 	IEnumerator Reload()
 	{
-		yield return new WaitForSeconds (1);
+		characterAnimator.GetComponent<Animator>().enabled = false;
+		yield return new WaitForSeconds (0);
 		SceneManager.LoadScene ("Start");
 	}
 }
